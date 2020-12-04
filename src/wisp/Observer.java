@@ -47,9 +47,14 @@ public class Observer {
     }
 
     //给定一个图，一个坐标和一个颜色，判定该坐标的点的颜色和指定颜色的相似度，同上一个方法
-    public static boolean compareImagePixelColor(BufferedImage paraImage, int x, int y, Color paraColor2, double paraPercentDiff, int paraAbsDiff){
+    public static boolean compareImagePixelColor(BufferedImage paraImage, int x, int y, Color paraColor, double paraPercentDiff, int paraAbsDiff){
         Color colorOne = getPixelColor(paraImage, x, y);
-        return compareColors(colorOne, paraColor2, paraPercentDiff, paraAbsDiff);
+        return compareColors(colorOne, paraColor, paraPercentDiff, paraAbsDiff);
+    }
+
+    public static boolean compareImagePixelColor(BufferedImage paraImage, Point paraPoint, Color paraColor, double paraPercentDiff, int paraAbsDiff){
+        Color colorOne = getPixelColor(paraImage, (int)paraPoint.getX(), (int)paraPoint.getY());
+        return compareColors(colorOne, paraColor, paraPercentDiff, paraAbsDiff);
     }
 
     public static void saveBufferedImage(BufferedImage paraImage, String paraPathName){
@@ -60,13 +65,13 @@ public class Observer {
                     Nexus.print("新建文件" + paraPathName);
                 }
             }
-            ImageIO.write(paraImage, "jpg", outputFile);
+            ImageIO.write(paraImage, "png", outputFile);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public static void saveBufferedImageDefaultPathName(BufferedImage paraImage){
-        saveBufferedImage(paraImage, "D:\\test\\" + System.currentTimeMillis()+".jpg");
+        saveBufferedImage(paraImage, "D:\\test\\" + System.currentTimeMillis()+".png");
     }
 }

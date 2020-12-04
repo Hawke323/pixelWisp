@@ -20,18 +20,18 @@ public class Drone {
     }
 
     //按下并弹起左键，添加一个随机的小偏移和持续时间
-    public void ClickScreen(int paraX, int paraY, int offset, int gap){
+    public void clickScreen(int paraX, int paraY, int offset, int gap){
         Random random = new Random();
         int actualDuration = 100 + (int)((double)gap * random.nextDouble());
         cachedThreadPool.execute(() -> {
-            this.MoveMouse(paraX, paraY, offset);
+            this.moveMouse(paraX, paraY, offset);
             robot.mousePress(InputEvent.BUTTON1_MASK);
             threadWait(actualDuration);
             robot.mouseRelease(InputEvent.BUTTON1_MASK);
         });
     }
 
-    public void MoveMouse(int paraX, int paraY, int offset){
+    public void moveMouse(int paraX, int paraY, int offset){
         Random random = new Random();
         int actualX = paraX + (int)((double)offset * random.nextDouble());
         int actualY = paraY + (int)((double)offset * random.nextDouble());
