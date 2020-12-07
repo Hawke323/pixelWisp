@@ -48,7 +48,7 @@ public class ExpeditionWisp {
     //游戏主菜单界面远征按钮位置和任意界面母港按钮位置
     Point menuBattlePoint = new Point(300, 400);
     Point battleExpePoint = new Point(1000, 370);
-    Point subInterfaceMainMenuPoint = new Point(115, 410);
+    Point subInterfaceBackHaborPoint = new Point(115, 410);
     //___________________________配置参数，远征分配___________________________//
     {
         //远征1
@@ -82,19 +82,27 @@ public class ExpeditionWisp {
         this.rendezvousBackHarbor();*/
 
         //发布远征测试
-        for(int fleetIndex = 1; fleetIndex <= 3; fleetIndex ++){
+        /*for(int fleetIndex = 1; fleetIndex <= 3; fleetIndex ++){
             selectFleetExpe(fleetIndex);
             threadWait(1600,400);
             selectFleet(fleetIndex);
             threadWait(1000,400);
             resupplyAndLaunch();
             threadWait(1000,400);
-        }
+        }*/
+
+        //测试界面识别结果
+        nexus.loadImage("D:\\test\\screenshots\\kantai1.png");
+        print("界面名称是" + nexus.getCurrentUINamePreloaded());
 
     }
 
     //检测完成的远征，并根据配置继续启动远征，为阻塞方法以避免冲突
     public void expeditionsCheck(){
+        //检查并争取锁，获取失败则直接返回
+        if(!nexus.tryClaimLockifNotOccupied()){
+            return;
+        }
         /*如果存在完成状态的远征，则进入远征界面，并回到母港，然后点击到不再存在为止
         （如果存在闲置状态的舰队——上一步后一定存在），进入远征界面
         根据每个闲置状态的舰队，选择相应的远征-选择舰队-补给-发送远征，结束后回到母港*/
@@ -139,6 +147,8 @@ public class ExpeditionWisp {
                 threadWait(1000,400);
             }
         }
+        //释放锁
+        nexus.releaseLock();
     }
 
     private boolean checkFleetIdle(int fleetIndex){
@@ -172,7 +182,7 @@ public class ExpeditionWisp {
 
     //进入母港界面
     private void rendezvousBackHarbor(){
-        nexus.clickScreen(subInterfaceMainMenuPoint);
+        nexus.clickScreen(subInterfaceBackHaborPoint);
     }
 
     //进入远征界面

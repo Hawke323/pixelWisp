@@ -77,7 +77,7 @@ public class Adjutant {
     //处理给定文件名的图片，寻找其中的锚点和对应的颜色，将其保存为单独的wisp文件，记录锚点的坐标和颜色
     private static Wisp processImageIntoWisp(File paraImageFile, List<Color> paraSignatureColor){
         //转化为bufferedImage
-        BufferedImage image = null;
+        BufferedImage image;
         try {
             image = ImageIO.read(paraImageFile);
         } catch (Exception e) {
@@ -94,7 +94,8 @@ public class Adjutant {
                 if(colorMatchingCheck(image, paraSignatureColor,col, row )){
                     Point newSignaturePoint = new Point(col + paraSignatureColor.size(), row);
                     Color newSignaturePointColor = new Color(image.getRGB((int)newSignaturePoint.getX(), (int)newSignaturePoint.getY()));
-                    print("写入签名点" + newSignaturePoint + newSignaturePointColor);
+                    //print("写入签名点" + newSignaturePoint + newSignaturePointColor);
+                    wisp.setSignatureColors(paraSignatureColor);
                     wisp.getTargetPoints().add(newSignaturePoint);
                     wisp.getTargetPointsColor().add(newSignaturePointColor);
                 }
@@ -127,12 +128,12 @@ public class Adjutant {
         int similarPointCount = 0;
         for(int index = 0; index < paraWisp.getTargetPoints().size(); index ++){
             if(Observer.compareImagePixelColor(paraImage, paraWisp.getTargetPoints().get(index), paraWisp.getTargetPointsColor().get(index),0.05, 5)){
-                print("发现匹配点" +  paraWisp.getTargetPoints().get(index));
+                //print("发现匹配点" +  paraWisp.getTargetPoints().get(index));
                 similarPointCount ++;
             }
         }
         double similarityScore = similarPointCount/(double)paraWisp.getTargetPoints().size();
-        print("和" + paraWisp.getWispName() + "的匹配分数是" + similarityScore);
+        print("当前画面和" + paraWisp.getWispName() + "的匹配分数是" + similarityScore);
         return similarityScore > paraSimThreshold;
     }
 
@@ -178,7 +179,6 @@ public class Adjutant {
     }
 
     private static Wisp convertFileToWisp(File paraWispFile){
-
         String wispContentString = "";
         try (InputStream inputStream = new FileInputStream(paraWispFile)) {
             // 创建字节数组

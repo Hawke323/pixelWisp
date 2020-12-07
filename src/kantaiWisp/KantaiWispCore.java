@@ -16,12 +16,15 @@ public class KantaiWispCore {
     private ExpeditionWisp expeditionWisp;
 
     public KantaiWispCore(){
+        //启动专属nexus，使用默认参数
         nexus = new Nexus();
         if(!nexus.startNexus(windowNameSubString)){
             print("未找到窗口 核心启动失败");
-            System.exit(-1);
+            return;
         }
+        //启动子模块
         expeditionWisp = new ExpeditionWisp(nexus);
+        //启动循环
         this.startLoop();
     }
 
@@ -31,7 +34,7 @@ public class KantaiWispCore {
         nexus.getCachedThreadPool().execute(() -> {
             while (true) {
                 //expeditionWisp.expeditionsCheck();
-                //expeditionWisp.expeCheckTest();
+                expeditionWisp.expeCheckTest();
                 threadWait(loopInterval);
             }
         });

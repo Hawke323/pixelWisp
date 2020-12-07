@@ -2,6 +2,7 @@ package wisp;
 
 import com.sun.jna.platform.DesktopWindow;
 import com.sun.jna.platform.WindowUtils;
+import org.junit.platform.commons.util.StringUtils;
 import wisp.data.GameWindow;
 
 import javax.imageio.ImageIO;
@@ -16,8 +17,9 @@ import java.util.List;
 
 //核心总控类，包含截图的共享信息、机器人的共享实例，并向上开放接口
 public class Nexus {
+    private boolean publicWispsLock = true;
     private BufferedImage gameImage;
-    private GameWindow gameWindow = new GameWindow();;
+    private GameWindow gameWindow = new GameWindow();
     private ExecutorService cachedThreadPool;
     //公共使用的robot，nexus本身不调用机器人的方法
     private Robot robot;
@@ -30,20 +32,22 @@ public class Nexus {
     private String windowNameSubString;
     private int windowXOffet = 0;
     private int windowYOffet = 0;
-    private int interval = 300;
-    private double defaultPercentDiff = 0.05;
-    private int defaultAbsDiff = 10;
+    private int loopInterval = 300;
+    private int waitUILoopInterval = 1000;
+    private double defaultComparePercentDiff = 0.05;
+    private int defaultCompareAbsDiff = 10;
     private int moveMouseOffset = 4;
     private int clickDuration = 100;
     //______________________________________配置参数2
     private String sourceFilePath = "D:\\test";
     private double compareUIThreshold = 0.8;
+
     //从左到右的颜色
     private List<Color> signatureColors = new ArrayList<>();
     {
-        signatureColors.add(new Color(123,234,123));
-        signatureColors.add(new Color(23,123,223));
-        signatureColors.add(new Color(234,123,234));
+        signatureColors.add(new Color(255,255,255));
+        signatureColors.add(new Color(0,0,0));
+        signatureColors.add(new Color(237,28,36));
     }
     //______________________________________配置结束
 
@@ -64,6 +68,8 @@ public class Nexus {
         adjutant = new Adjutant();
         drone = new Drone(robot);
         observer = new Observer(robot);
+        //从所有PNG图新建wisp文件，并预读所有新建或者存在的wisp文件
+        Adjutant.generateWisps(sourceFilePath,signatureColors);
         adjutant.preloadWisps(sourceFilePath);
         this.startLoop();
         return true;
@@ -78,7 +84,7 @@ public class Nexus {
                 if (refreshImageSwitch) {
                     refreshImage();
                 }
-                threadWait(interval);
+                threadWait(loopInterval);
             }
         });
     }
@@ -124,6 +130,32 @@ public class Nexus {
         return adjutant.compareWithPreloadedWisps(gameImage, compareUIThreshold);
     }
 
+    //从预载的Wisp中寻找当前UI名称
+    public String getRefreshUINamePreloaded(){
+        this.refreshImage();
+        return adjutant.compareWithPreloadedWisps(gameImage, compareUIThreshold);
+    }
+
+    public boolean compareRefreshUINamePreloaded(String paraUIName){
+        return paraUIName.equals(getRefreshUINamePreloaded());
+    }
+
+    public boolean waitUtilUIPreloaded(String paraUIName, int paraMaxWait){
+        int msWaited = 0;
+        print("开始等待界面" + paraUIName);
+        while (!compareRefreshUINamePreloaded(paraUIName)) {
+            print("依然在等待界面" + paraUIName);
+            threadWait(waitUILoopInterval);
+
+            msWaited += waitUILoopInterval;
+            if(msWaited >= paraMaxWait){
+                print("等待界面" + paraUIName + "超时");
+                return false;
+            }
+        }
+        return true;
+    }
+
     //获得当前游戏UI，涉及文件读取，不推荐使用
     public String getCurrentUIName(){
         return Adjutant.compareFolderWisps(gameImage, sourceFilePath, compareUIThreshold);
@@ -162,11 +194,6 @@ public class Nexus {
         return gameWindowRect;
     }
 
-    //会抓取当前截图
-    public void getCurrentInterfaceName(){
-
-    }
-
     //不会抓取新截图
     public Color getImageColor(int paraX, int paraY){
         return Observer.getPixelColor(gameImage, paraX, paraY);
@@ -179,7 +206,7 @@ public class Nexus {
 
     //不会抓取新截图
     public boolean compareImageColorDefault(Color paraColor, int paraX, int paraY){
-        return Observer.compareImagePixelColor(gameImage, paraX, paraY, paraColor, defaultPercentDiff, defaultAbsDiff);
+        return Observer.compareImagePixelColor(gameImage, paraX, paraY, paraColor, defaultComparePercentDiff, defaultCompareAbsDiff);
     }
 
     //Drone的诸多操作方法，涉及坐标的都要进行转换
@@ -254,4 +281,71 @@ public class Nexus {
     public static void print(Object paraObject){
         System.out.println(paraObject);
     }
+
+
+    //______________________________________配置项Setters，不使用默认值的话，使用这些进行赋值
+    public void setWindowNameSubString(String windowNameSubString) {
+        this.windowNameSubString = windowNameSubString;
+    }
+
+    public void setWindowXOffet(int windowXOffet) {
+        this.windowXOffet = windowXOffet;
+    }
+
+    public void setWindowYOffet(int windowYOffet) {
+        this.windowYOffet = windowYOffet;
+    }
+
+    public void setLoopInterval(int loopInterval) {
+        this.loopInterval = loopInterval;
+    }
+
+    public void setDefaultComparePercentDiff(double defaultComparePercentDiff) {
+        this.defaultComparePercentDiff = defaultComparePercentDiff;
+    }
+
+    public void setDefaultCompareAbsDiff(int defaultCompareAbsDiff) {
+        this.defaultCompareAbsDiff = defaultCompareAbsDiff;
+    }
+
+    public void setMoveMouseOffset(int moveMouseOffset) {
+        this.moveMouseOffset = moveMouseOffset;
+    }
+
+    public void setClickDuration(int clickDuration) {
+        this.clickDuration = clickDuration;
+    }
+
+    public void setSourceFilePath(String sourceFilePath) {
+        this.sourceFilePath = sourceFilePath;
+    }
+
+    public void setCompareUIThreshold(double compareUIThreshold) {
+        this.compareUIThreshold = compareUIThreshold;
+    }
+
+    public void setSignatureColors(List<Color> signatureColors) {
+        this.signatureColors = signatureColors;
+    }
+
+    public boolean isPublicWispsLock() {
+        return publicWispsLock;
+    }
+
+    public void setPublicWispsLock(boolean publicWispsLock) {
+        this.publicWispsLock = publicWispsLock;
+    }
+
+    public boolean tryClaimLockifNotOccupied(){
+        if(!this.publicWispsLock){
+            this.publicWispsLock = true;
+            return true;
+        }
+        return false;
+    }
+
+    public void releaseLock(){
+        this.publicWispsLock = false;
+    }
+
 }
