@@ -2,7 +2,6 @@ package wisp;
 
 import com.sun.jna.platform.DesktopWindow;
 import com.sun.jna.platform.WindowUtils;
-import org.junit.platform.commons.util.StringUtils;
 import wisp.data.GameWindow;
 
 import javax.imageio.ImageIO;
@@ -68,11 +67,14 @@ public class Nexus {
         adjutant = new Adjutant();
         drone = new Drone(robot);
         observer = new Observer(robot);
-        //从所有PNG图新建wisp文件，并预读所有新建或者存在的wisp文件
-        Adjutant.generateWisps(sourceFilePath,signatureColors);
-        adjutant.preloadWisps(sourceFilePath);
         this.startLoop();
         return true;
+    }
+
+    //从所有PNG图新建wisp文件，并预读所有新建或者存在的wisp文件
+    public void generateReloadWisp(){
+        Adjutant.generateWisps(sourceFilePath,signatureColors);
+        adjutant.preloadWisps(sourceFilePath);
     }
 
     //核心的循环方法，用于刷新游戏截图
@@ -140,6 +142,8 @@ public class Nexus {
         return paraUIName.equals(getRefreshUINamePreloaded());
     }
 
+
+    //等待界面，超时则返回false
     public boolean waitUtilUIPreloaded(String paraUIName, int paraMaxWait){
         int msWaited = 0;
         print("开始等待界面" + paraUIName);
@@ -153,6 +157,17 @@ public class Nexus {
                 return false;
             }
         }
+        return true;
+    }
+
+    //等待某个界面然后点击按钮
+    public boolean waitUtilUIThenClickPoint(String paraUIName, int paraMaxWait, Point paraTargetPoint, int waitDuration){
+        if(!waitUtilUIPreloaded(paraUIName, paraMaxWait)){
+            print("等待界面" + paraUIName + "超时");
+            return false;
+        }
+        threadWait(waitDuration,waitDuration/6);
+        clickScreen(paraTargetPoint);
         return true;
     }
 
@@ -194,6 +209,14 @@ public class Nexus {
         return gameWindowRect;
     }
 
+    public static Point xSwift(Point paraLeftestPoint, int paraXIndex, int paraXGap){
+        return new Point((int)paraLeftestPoint.getX() + (paraXIndex - 1) * paraXGap, (int)paraLeftestPoint.getY());
+    }
+
+    public static Point ySwift(Point paraTopPoint, int paraYIndex, int paraYGap){
+        return new Point((int)paraTopPoint.getX(), (int)paraTopPoint.getY() + (paraYIndex - 1) * paraYGap);
+    }
+
     //不会抓取新截图
     public Color getImageColor(int paraX, int paraY){
         return Observer.getPixelColor(gameImage, paraX, paraY);
@@ -207,6 +230,10 @@ public class Nexus {
     //不会抓取新截图
     public boolean compareImageColorDefault(Color paraColor, int paraX, int paraY){
         return Observer.compareImagePixelColor(gameImage, paraX, paraY, paraColor, defaultComparePercentDiff, defaultCompareAbsDiff);
+    }
+
+    public boolean compareImageColorDefault(Color paraColor, Point paraPointChecked){
+        return Observer.compareImagePixelColor(gameImage, (int)paraPointChecked.getX(), (int)paraPointChecked.getY(), paraColor, defaultComparePercentDiff, defaultCompareAbsDiff);
     }
 
     //Drone的诸多操作方法，涉及坐标的都要进行转换

@@ -12,8 +12,8 @@ public class KantaiWispCore {
     private int loopInterval = 3 * 60 * 1000;
     //______________________________________配置参数
 
-    private Nexus nexus;
-    private ExpeditionWisp expeditionWisp;
+    public static Nexus nexus;
+    public static ExpeditionWisp expeditionWisp;
 
     public KantaiWispCore(){
         //启动专属nexus，使用默认参数
@@ -22,10 +22,13 @@ public class KantaiWispCore {
             print("未找到窗口 核心启动失败");
             return;
         }
+        print("启动图形界面");
+        KanColleWisp.initUI();
+        print("图形界面启动完成");
         //启动子模块
-        expeditionWisp = new ExpeditionWisp(nexus);
+        //expeditionWisp = new ExpeditionWisp(nexus);
         //启动循环
-        this.startLoop();
+        //this.startLoop();
     }
 
     @SuppressWarnings("InfiniteLoopStatement")
@@ -39,4 +42,6 @@ public class KantaiWispCore {
             }
         });
     }
+
+
 }

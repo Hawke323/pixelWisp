@@ -65,7 +65,7 @@ public class DrillWisp {
         //按照顺序进行演习，如果轮到3或者5舰队，则先进行补给
         for(drillFleetIndex = 1; drillFleetIndex <= 5; drillFleetIndex ++){
             if(drillFleetIndex == 3 || drillFleetIndex == 5){
-                refuelAndReturn();
+                refuelAndReturnHarbor();
             }
             //等待母港界面
             if(!nexus.waitUtilUIPreloaded(UI_NAME_HARBOR, 10000)){
@@ -189,7 +189,7 @@ public class DrillWisp {
     }
 
     //需要母港：对一舰队补给，并回到母港
-    private void refuelAndReturn(){
+    private void refuelAndReturnHarbor(){
         nexus.clickScreen(menuRefuelPoint);
         threadWait(3000,1000);
         nexus.clickScreen(refuelFleetPoint);
