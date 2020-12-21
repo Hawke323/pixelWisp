@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d344f0e-ca1b-4217-b2f8-062ae23833cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kantaiWisp/FactoryWisp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wowwisp/LeatherWisp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wowwisp/data/Target.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/Wand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/Wand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KantaiWispCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KantaiWispCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/wisp/Nexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/wisp/Nexus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wisp/Nexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wisp/Nexus.java" afterDir="false" />
     </list>
@@ -25,51 +31,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wisp/Nexus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+            <state relative-caret-position="288">
+              <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9001#9002#0" expanded="true" />
-                <element signature="e#9055#9056#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java">
+        <entry file="file://$PROJECT_DIR$/src/wowwisp/WowWispCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="423">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.form">
-          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kantaiWisp/ExpeditionWisp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,14 +79,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java">
+        <entry file="file://$PROJECT_DIR$/src/wowwisp/LeatherWisp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="531">
+              <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4908#4909#0" expanded="true" />
-                <element signature="e#4948#4949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wowwisp/data/Target.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <folding>
+                <element signature="e#96#97#0" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#102#103#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="342">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,12 +125,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kantaiWisp/FactoryWisp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="1755">
               <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#117#118#0" expanded="true" />
-                <element signature="e#155#156#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
+            <state relative-caret-position="12771">
               <caret line="500" column="22" selection-start-line="500" selection-start-column="22" selection-end-line="500" selection-end-column="22" />
             </state>
           </provider>
@@ -129,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wisp/Drone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="1134">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,15 +204,19 @@
         <option value="$PROJECT_DIR$/src/Starter.java" />
         <option value="$PROJECT_DIR$/src/wisp/data/Wisp.java" />
         <option value="$PROJECT_DIR$/src/wisp/Observer.java" />
-        <option value="$PROJECT_DIR$/src/Wand.java" />
         <option value="$PROJECT_DIR$/src/wisp/Adjutant.java" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/ExpeditionWisp.java" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/FactoryWisp.java" />
-        <option value="$PROJECT_DIR$/src/wisp/Nexus.java" />
-        <option value="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.form" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.java" />
+        <option value="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" />
+        <option value="$PROJECT_DIR$/src/wisp/Nexus.java" />
+        <option value="$PROJECT_DIR$/src/wowwisp/data/target.java" />
+        <option value="$PROJECT_DIR$/src/wowwisp/data/Target.java" />
+        <option value="$PROJECT_DIR$/src/wowwisp/LeatherWisp.java" />
+        <option value="$PROJECT_DIR$/src/Wand.java" />
+        <option value="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" />
       </list>
     </option>
   </component>
@@ -206,10 +227,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="7" />
-    <option name="width" value="1474" />
-    <option name="height" value="1040" />
+    <option name="x" value="51" />
+    <option name="y" value="-4" />
+    <option name="width" value="1304" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -219,7 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,13 +276,6 @@
               <item name="PixelWisp" type="b2602c69:ProjectViewProjectNode" />
               <item name="PixelWisp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="kantaiWisp" type="462c0819:PsiDirectoryNode" />
-              <item name="KanColleWisp" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="PixelWisp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PixelWisp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wisp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,13 +287,26 @@
             </path>
             <path>
               <item name="PixelWisp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PixelWisp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wowwisp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PixelWisp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PixelWisp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wowwisp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PixelWisp" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,19 +317,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/externalLib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ibis4/source/davinci-hardware-monitor/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workbench\Personal\PixelWisp\src\externalLib" />
+      <recent name="E:\Workbench\Personal\PixelWisp\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="wowwisp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workbench\Personal\PixelWisp\src\externalLib" />
       <recent name="E:\Workbench\Personal\PixelWisp\src" />
       <recent name="E:\Workbench\Personal\PixelWisp\src\wisp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workbench\Personal\PixelWisp\src\externalLib" />
-      <recent name="E:\Workbench\Personal\PixelWisp\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,7 +347,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.Wand.leatherSearchTest">
     <configuration name="KanColleWisp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kantaiWisp.KanColleWisp" />
       <module name="PixelWisp" />
@@ -354,21 +384,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Wand.adjutantTestCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LeatherWisp.leatherSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PixelWisp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Wand" />
-      <option name="METHOD_NAME" value="adjutantTestCompare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wowwisp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="wowwisp" />
+      <option name="MAIN_CLASS_NAME" value="wowwisp.LeatherWisp" />
+      <option name="METHOD_NAME" value="leatherSearchTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Wand.adjutantTestGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Wand.leatherSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PixelWisp" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Wand" />
-      <option name="METHOD_NAME" value="adjutantTestGenerate" />
+      <option name="METHOD_NAME" value="leatherSearchTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -376,11 +412,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Wand.leatherSearchTest" />
+        <item itemvalue="JUnit.LeatherWisp.leatherSearchTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.KantaiWispCore" />
         <item itemvalue="Application.KanColleWisp" />
-        <item itemvalue="JUnit.Wand.adjutantTestCompare" />
-        <item itemvalue="JUnit.Wand.adjutantTestGenerate" />
       </list>
     </recent_temporary>
   </component>
@@ -399,67 +435,69 @@
       <workItem from="1605489854511" duration="9527000" />
       <workItem from="1605577045495" duration="9100000" />
       <workItem from="1606702271407" duration="85514000" />
-      <workItem from="1607322078208" duration="44806000" />
+      <workItem from="1607322078208" duration="46761000" />
+      <workItem from="1608107389153" duration="1693000" />
+      <workItem from="1608261816002" duration="17486000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Wand_adjutantTest - 2020.12.03 at 15h 34m 39s.xml">
-      <configuration name="Wand.adjutantTest" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 47m 57s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTest - 2020.12.03 at 15h 42m 53s.xml">
-      <configuration name="Wand.adjutantTest" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 48m 47s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTest - 2020.12.03 at 15h 43m 15s.xml">
-      <configuration name="Wand.adjutantTest" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 48m 57s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 44m 36s.xml">
-      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 05s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 44m 50s.xml">
-      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 12s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 45m 25s.xml">
-      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 16s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 45m 37s.xml">
-      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 23s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 46m 36s.xml">
-      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 17h 08m 46s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 47m 04s.xml">
-      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 17h 10m 31s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 47m 19s.xml">
-      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
+    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 17h 11m 51s.xml">
+      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153823000" />
+    <option name="totallyTimeSpent" value="174957000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="7" width="1474" height="1040" extended-state="0" />
+    <frame x="51" y="-4" width="1304" height="1046" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7139614" visible="true" weight="0.27510607" />
-      <window_info id="Structure" order="1" sideWeight="0.2860386" side_tool="true" visible="true" weight="0.27510607" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7091319" visible="true" weight="0.2363344" />
+      <window_info id="Structure" order="1" sideWeight="0.2908681" side_tool="true" visible="true" weight="0.2363344" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3291714" />
-      <window_info anchor="bottom" x="1013" y="331" width="1064" height="656" id="Run" order="2" type="WINDOWED" visible="true" weight="0.23945267" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32807216" />
+      <window_info anchor="bottom" x="1253" y="83" width="1190" height="940" id="Run" order="2" type="WINDOWED" visible="true" weight="0.23945267" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30665162" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.25652668" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.25591883" />
       <window_info anchor="bottom" id="JProfiler" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -608,63 +646,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="500" column="22" selection-start-line="500" selection-start-column="22" selection-end-line="500" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wisp/Drone.java">
+    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1296">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/ExpeditionWisp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4908#4909#0" expanded="true" />
-            <element signature="e#4948#4949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wisp/Nexus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9001#9002#0" expanded="true" />
-            <element signature="e#9055#9056#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,10 +659,10 @@
     <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.java">
+    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        <state relative-caret-position="918">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -684,20 +671,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kantaiWisp/FactoryWisp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="1755">
           <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12771">
+          <caret line="500" column="22" selection-start-line="500" selection-start-column="22" selection-end-line="500" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wisp/Drone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="702">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
+          <folding>
+            <element signature="e#9199#9200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wowwisp/data/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="e#96#97#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#102#103#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/ExpeditionWisp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wowwisp/LeatherWisp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wisp/Nexus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wowwisp/WowWispCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

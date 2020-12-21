@@ -7,6 +7,11 @@ import static wisp.Nexus.threadWait;
 
 public class KantaiWispCore {
 
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        new KantaiWispCore();
+    }
+
     //______________________________________配置参数
     private String windowNameSubString = "kantai";
     private int loopInterval = 3 * 60 * 1000;
