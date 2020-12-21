@@ -264,6 +264,17 @@ public class Nexus {
         this.clickScreen(newX(paraPoint), newY(paraPoint));
     }
 
+    public void clickRightScreen(int paraX, int paraY){
+        //print("点击位置" + paraX + "," + paraY);
+        drone.clickRightScreen(newX(paraX), newY(paraY), moveMouseOffset, clickDuration);
+    }
+    public void clickRightScreen(double paraX, double paraY){
+        this.clickRightScreen(newX((int)paraX), newY((int)paraY));
+    }
+    public void clickRightScreen(Point paraPoint){
+        this.clickRightScreen(newX(paraPoint), newY(paraPoint));
+    }
+
     private int newX(int paraX){
         return (int)(paraX + gameWindow.getX());
     }

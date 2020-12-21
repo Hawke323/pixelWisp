@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d344f0e-ca1b-4217-b2f8-062ae23833cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/wowwisp/LeatherWisp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wowwisp/data/Target.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/Wand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/Wand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KanColleWisp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KantaiWispCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/kantaiWisp/KantaiWispCore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/wisp/Nexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/wisp/Nexus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wisp/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wisp/Drone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wisp/Nexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wisp/Nexus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +21,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wisp/Nexus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+            <state relative-caret-position="342">
+              <caret line="257" column="18" selection-start-line="257" selection-start-column="18" selection-end-line="257" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#538#539#0" expanded="true" />
                 <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#8834#8835#0" expanded="true" />
+                <element signature="e#8900#8901#0" expanded="true" />
+                <element signature="e#9341#9342#0" expanded="true" />
+                <element signature="e#9407#9408#0" expanded="true" />
+                <element signature="e#9337#9338#0" expanded="true" />
+                <element signature="e#9398#9399#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
+            <state relative-caret-position="459">
               <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -57,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wowwisp/WowWispCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="450">
+              <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12771">
+            <state relative-caret-position="810">
               <caret line="500" column="22" selection-start-line="500" selection-start-column="22" selection-end-line="500" selection-end-column="22" />
             </state>
           </provider>
@@ -146,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wisp/Drone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="648">
+              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,6 +165,7 @@
       <find>开始预载wisp文件</find>
       <find>发现匹配点</find>
       <find>Switch</find>
+      <find>click</find>
     </findStrings>
     <dirStrings>
       <dir>E:\Workbench\Personal\PixelWisp</dir>
@@ -199,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/Wisp/Nexus.java" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/wisp/Nexus.java" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/KantaiWisp.java" />
-        <option value="$PROJECT_DIR$/src/wisp/Drone.java" />
         <option value="$PROJECT_DIR$/src/wisp/data/TestClass.java" />
         <option value="$PROJECT_DIR$/src/Starter.java" />
         <option value="$PROJECT_DIR$/src/wisp/data/Wisp.java" />
@@ -211,12 +207,13 @@
         <option value="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.form" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.java" />
         <option value="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" />
-        <option value="$PROJECT_DIR$/src/wisp/Nexus.java" />
         <option value="$PROJECT_DIR$/src/wowwisp/data/target.java" />
         <option value="$PROJECT_DIR$/src/wowwisp/data/Target.java" />
         <option value="$PROJECT_DIR$/src/wowwisp/LeatherWisp.java" />
         <option value="$PROJECT_DIR$/src/Wand.java" />
         <option value="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" />
+        <option value="$PROJECT_DIR$/src/wisp/Drone.java" />
+        <option value="$PROJECT_DIR$/src/wisp/Nexus.java" />
       </list>
     </option>
   </component>
@@ -437,7 +434,7 @@
       <workItem from="1606702271407" duration="85514000" />
       <workItem from="1607322078208" duration="46761000" />
       <workItem from="1608107389153" duration="1693000" />
-      <workItem from="1608261816002" duration="17486000" />
+      <workItem from="1608261816002" duration="18972000" />
     </task>
     <servers />
   </component>
@@ -474,7 +471,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174957000" />
+    <option name="totallyTimeSpent" value="176443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="-4" width="1304" height="1046" extended-state="0" />
@@ -679,33 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12771">
-          <caret line="500" column="22" selection-start-line="500" selection-start-column="22" selection-end-line="500" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wisp/Drone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -734,34 +704,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/ExpeditionWisp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/wowwisp/LeatherWisp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wisp/Nexus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,10 +724,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/wisp/Nexus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="257" column="18" selection-start-line="257" selection-start-column="18" selection-end-line="257" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#8834#8835#0" expanded="true" />
+            <element signature="e#8900#8901#0" expanded="true" />
+            <element signature="e#9341#9342#0" expanded="true" />
+            <element signature="e#9407#9408#0" expanded="true" />
+            <element signature="e#9337#9338#0" expanded="true" />
+            <element signature="e#9398#9399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="500" column="22" selection-start-line="500" selection-start-column="22" selection-end-line="500" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wisp/Drone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/ExpeditionWisp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/wowwisp/WowWispCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -40,14 +40,16 @@ public class WowWispCore {
                 if(lastCastTime + globalCD < System.currentTimeMillis()){
                     nexus.refreshImage();
                     leatherWisp.leatherMobRefresh();
-                    Target picked = leatherWisp.getAvailableTarget();
-                    if(null != picked){
-                        print("取到的单位是" + picked);
-                        leatherWisp.tagTarget(picked);
-                        nexus.moveMouse(picked.getTargetLocation());
+                    Target pickedTarget = leatherWisp.getAvailableTarget();
+                    if(null != pickedTarget){
+                        print("取到的单位是" + pickedTarget);
+                        leatherWisp.tagTarget(pickedTarget);
+                        nexus.moveMouse(pickedTarget.getTargetLocation());
                         nexus.pressButton(KeyEvent.VK_F4);
                         lastCastTime = System.currentTimeMillis();
                     }
+                }else{
+
                 }
                 threadWait(loopInterval);
             }
