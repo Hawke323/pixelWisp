@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d344f0e-ca1b-4217-b2f8-062ae23833cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/wisp/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wisp/Drone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wisp/Nexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wisp/Nexus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wowwisp/WowWispCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+            <state relative-caret-position="558">
+              <caret line="48" column="66" lean-forward="true" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,9 +209,9 @@
         <option value="$PROJECT_DIR$/src/wowwisp/data/Target.java" />
         <option value="$PROJECT_DIR$/src/wowwisp/LeatherWisp.java" />
         <option value="$PROJECT_DIR$/src/Wand.java" />
-        <option value="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" />
         <option value="$PROJECT_DIR$/src/wisp/Drone.java" />
         <option value="$PROJECT_DIR$/src/wisp/Nexus.java" />
+        <option value="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" />
       </list>
     </option>
   </component>
@@ -224,9 +222,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="-4" />
-    <option name="width" value="1304" />
+    <option name="x" value="-1087" />
+    <option name="y" value="-447" />
+    <option name="width" value="1094" />
     <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -434,7 +432,7 @@
       <workItem from="1606702271407" duration="85514000" />
       <workItem from="1607322078208" duration="46761000" />
       <workItem from="1608107389153" duration="1693000" />
-      <workItem from="1608261816002" duration="18972000" />
+      <workItem from="1608261816002" duration="22641000" />
     </task>
     <servers />
   </component>
@@ -471,14 +469,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176443000" />
+    <option name="totallyTimeSpent" value="180112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="-4" width="1304" height="1046" extended-state="0" />
-    <editor active="true" />
+    <frame x="51" y="-4" width="1526" height="1046" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7091319" visible="true" weight="0.2363344" />
-      <window_info id="Structure" order="1" sideWeight="0.2908681" side_tool="true" visible="true" weight="0.2363344" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7091319" visible="true" weight="0.2005457" />
+      <window_info id="Structure" order="1" sideWeight="0.2908681" side_tool="true" visible="true" weight="0.2005457" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -781,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wowwisp/WowWispCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+        <state relative-caret-position="558">
+          <caret line="48" column="66" lean-forward="true" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

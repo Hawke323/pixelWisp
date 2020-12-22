@@ -49,7 +49,7 @@ public class WowWispCore {
                         lastCastTime = System.currentTimeMillis();
                     }
                 }else{
-
+                    print("等待暂停功能完成后，集成点击并剥皮功能，判定mouseover（宏命令条件）/选择单位（清空-选择）死亡再点击右键。之前由AHK代理");
                 }
                 threadWait(loopInterval);
             }
