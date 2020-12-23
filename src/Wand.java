@@ -13,6 +13,7 @@ import com.sun.jna.platform.WindowUtils;
 import wisp.Adjutant;
 import wisp.Nexus;
 import wisp.data.Wisp;
+import wowwisp.WowWispCore;
 
 import javax.imageio.ImageIO;
 
@@ -24,6 +25,12 @@ public class Wand {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         new KantaiWispCore();
+    }
+
+    @Test
+    void leatherSearchTest(){
+        WowWispCore wowWispCore = new WowWispCore();
+        //wowWispCore.leatherSearchTest();
     }
 
     @Test

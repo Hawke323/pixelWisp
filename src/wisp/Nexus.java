@@ -16,7 +16,16 @@ import java.util.List;
 
 //核心总控类，包含截图的共享信息、机器人的共享实例，并向上开放接口
 public class Nexus {
+<<<<<<< HEAD
     private boolean publicWispsLock = false;
+=======
+    private boolean publicWispsLock = true;
+
+    public BufferedImage getGameImage() {
+        return gameImage;
+    }
+
+>>>>>>> d0f607d6fe2258867f9c6b660b5c82f7aa9b33b5
     private BufferedImage gameImage;
     private GameWindow gameWindow = new GameWindow();
     private ExecutorService cachedThreadPool;
@@ -239,40 +248,43 @@ public class Nexus {
     //Drone的诸多操作方法，涉及坐标的都要进行转换
     public void moveMouse(int paraX, int paraY){
         //print("移动点到" + paraX + "," + paraY);
-        drone.moveMouse(newX(paraX), newY(paraY), moveMouseOffset);
+        drone.moveMouse(realX(paraX), realY(paraY), moveMouseOffset);
     }
     public void moveMouse(double paraX, double paraY){
-        this.moveMouse(newX((int)paraX), newY((int)paraY));
+        this.moveMouse((int)paraX, (int)paraY);
     }
     public void moveMouse(Point paraPoint){
-        this.moveMouse(newX(paraPoint), newY(paraPoint));
+        this.moveMouse(paraPoint.getX(), paraPoint.getY());
     }
 
     public void clickScreen(int paraX, int paraY){
         //print("点击位置" + paraX + "," + paraY);
-        drone.clickScreen(newX(paraX), newY(paraY), moveMouseOffset, clickDuration);
+        drone.clickScreen(realX(paraX), realY(paraY), moveMouseOffset, clickDuration);
     }
     public void clickScreen(double paraX, double paraY){
-        this.clickScreen(newX((int)paraX), newY((int)paraY));
+        this.clickScreen((int)paraX, (int)paraY);
     }
     public void clickScreen(Point paraPoint){
-        this.clickScreen(newX(paraPoint), newY(paraPoint));
+        this.clickScreen(paraPoint.getX(), paraPoint.getY());
     }
 
-    private int newX(int paraX){
+    public void clickRightScreen(int paraX, int paraY){
+        //print("点击位置" + paraX + "," + paraY);
+        drone.clickRightScreen(realX(paraX), realY(paraY), moveMouseOffset, clickDuration);
+    }
+    public void clickRightScreen(double paraX, double paraY){
+        this.clickRightScreen((int)paraX, (int)paraY);
+    }
+    public void clickRightScreen(Point paraPoint){
+        this.clickRightScreen(paraPoint.getX(), paraPoint.getY());
+    }
+
+    private int realX(int paraX){
         return (int)(paraX + gameWindow.getX());
     }
 
-    private int newY(int paraY){
+    private int realY(int paraY){
         return (int)(paraY + gameWindow.getY());
-    }
-
-    private int newX(Point paraPoint){
-        return (int)(paraPoint.getX() + gameWindow.getX());
-    }
-
-    private int newY(Point paraPoint){
-        return (int)(paraPoint.getY() + gameWindow.getY());
     }
 
     public void pressButton(int paraKeyCode){
