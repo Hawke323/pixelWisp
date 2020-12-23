@@ -247,10 +247,10 @@ public class Nexus {
         drone.moveMouse(newX(paraX), newY(paraY), moveMouseOffset);
     }
     public void moveMouse(double paraX, double paraY){
-        this.moveMouse(newX((int)paraX), newY((int)paraY));
+        this.moveMouse((int)paraX, (int)paraY);
     }
     public void moveMouse(Point paraPoint){
-        this.moveMouse(newX(paraPoint), newY(paraPoint));
+        this.moveMouse(paraPoint.getX(), paraPoint.getY());
     }
 
     public void clickScreen(int paraX, int paraY){
@@ -258,10 +258,10 @@ public class Nexus {
         drone.clickScreen(newX(paraX), newY(paraY), moveMouseOffset, clickDuration);
     }
     public void clickScreen(double paraX, double paraY){
-        this.clickScreen(newX((int)paraX), newY((int)paraY));
+        this.clickScreen((int)paraX, (int)paraY);
     }
     public void clickScreen(Point paraPoint){
-        this.clickScreen(newX(paraPoint), newY(paraPoint));
+        this.clickScreen(paraPoint.getX(), paraPoint.getY());
     }
 
     public void clickRightScreen(int paraX, int paraY){
@@ -269,10 +269,10 @@ public class Nexus {
         drone.clickRightScreen(newX(paraX), newY(paraY), moveMouseOffset, clickDuration);
     }
     public void clickRightScreen(double paraX, double paraY){
-        this.clickRightScreen(newX((int)paraX), newY((int)paraY));
+        this.clickRightScreen((int)paraX, (int)paraY);
     }
     public void clickRightScreen(Point paraPoint){
-        this.clickRightScreen(newX(paraPoint), newY(paraPoint));
+        this.clickRightScreen(paraPoint.getX(), paraPoint.getY());
     }
 
     private int newX(int paraX){
@@ -281,14 +281,6 @@ public class Nexus {
 
     private int newY(int paraY){
         return (int)(paraY + gameWindow.getY());
-    }
-
-    private int newX(Point paraPoint){
-        return (int)(paraPoint.getX() + gameWindow.getX());
-    }
-
-    private int newY(Point paraPoint){
-        return (int)(paraPoint.getY() + gameWindow.getY());
     }
 
     public void pressButton(int paraKeyCode){
