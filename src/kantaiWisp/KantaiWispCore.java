@@ -8,8 +8,8 @@ import static wisp.Nexus.threadWait;
 public class KantaiWispCore {
 
     //______________________________________配置参数
-    private String windowNameSubString = "kantai";
-    private int loopInterval = 3 * 60 * 1000;
+    private String windowNameSubString = "poi";
+    private int loopInterval = 60 * 1000;
     //______________________________________配置参数
 
     public static Nexus nexus;
@@ -26,9 +26,9 @@ public class KantaiWispCore {
         KanColleWisp.initUI();
         print("图形界面启动完成");
         //启动子模块
-        //expeditionWisp = new ExpeditionWisp(nexus);
+        expeditionWisp = new ExpeditionWisp(nexus);
         //启动循环
-        //this.startLoop();
+        this.startLoop();
     }
 
     @SuppressWarnings("InfiniteLoopStatement")
@@ -36,8 +36,9 @@ public class KantaiWispCore {
         print("Starting Kantaiwisp Core...");
         nexus.getCachedThreadPool().execute(() -> {
             while (true) {
-                //expeditionWisp.expeditionsCheck();
-                expeditionWisp.expeCheckTest();
+                expeditionWisp.expeditionsCheck();
+                print("远征检测结束 等待中");
+                //expeditionWisp.expeCheckTest();
                 threadWait(loopInterval);
             }
         });

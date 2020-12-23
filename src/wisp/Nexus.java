@@ -16,7 +16,7 @@ import java.util.List;
 
 //核心总控类，包含截图的共享信息、机器人的共享实例，并向上开放接口
 public class Nexus {
-    private boolean publicWispsLock = true;
+    private boolean publicWispsLock = false;
     private BufferedImage gameImage;
     private GameWindow gameWindow = new GameWindow();
     private ExecutorService cachedThreadPool;
@@ -38,15 +38,15 @@ public class Nexus {
     private int moveMouseOffset = 4;
     private int clickDuration = 100;
     //______________________________________配置参数2
-    private String sourceFilePath = "D:\\test";
+    private String sourceFilePath = "D:\\kantai\\wisp";
     private double compareUIThreshold = 0.8;
 
     //从左到右的颜色
     private List<Color> signatureColors = new ArrayList<>();
     {
-        signatureColors.add(new Color(255,255,255));
-        signatureColors.add(new Color(0,0,0));
-        signatureColors.add(new Color(237,28,36));
+        signatureColors.add(new Color(244,244,244));
+        signatureColors.add(new Color(11,11,11));
+        signatureColors.add(new Color(33,133,233));
     }
     //______________________________________配置结束
 

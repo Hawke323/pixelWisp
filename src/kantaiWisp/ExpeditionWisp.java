@@ -20,11 +20,11 @@ public class ExpeditionWisp {
     //___________________________配置参数，界面相关___________________________//
     //界面位置相关（固定）
         //Poi远征状态位置
-    Point expeOneStatusPoint = new Point(660, 875); //1-875, 3-925. gap = 25
+    Point expeOneStatusPoint = new Point(662, 875); //1-875, 3-925. gap = 25
     int expeStatusGap = 25;
 
         //Poi远征状态颜色
-    Color expeUnderwayColor = new Color(100,100,100); //TODO
+    Color expeUnderwayColor = new Color(35,69,93);
     Color expeCompleteColor = new Color(34,76,70);
     Color expeIdleColor = new Color(39,52,62);
 
@@ -42,6 +42,7 @@ public class ExpeditionWisp {
     int expeFleetGap = 47;
 
         //游戏远征界面补给按钮和开始远征按钮
+    Point expeConfirmPoint = new Point(1000, 700);
     Point expeSupplyPoint = new Point(750, 690);
     Point expeLaunchPoint = new Point(915, 690);
 
@@ -55,11 +56,11 @@ public class ExpeditionWisp {
         fleetExpePage[1] = 1;
         fleetExpeIndex[1] = 2;
         //远征2
-        fleetExpePage[2] = 2;
-        fleetExpeIndex[2] = 3;
+        fleetExpePage[2] = 1;
+        fleetExpeIndex[2] = 5;
         //远征3
-        fleetExpePage[3] = 4;
-        fleetExpeIndex[3] = 3;
+        fleetExpePage[3] = 6;
+        fleetExpeIndex[3] = 6;
     }
 
     enum ExpeditionStatus{
@@ -68,41 +69,41 @@ public class ExpeditionWisp {
 
     public void expeCheckTest(){
         print("测试远征模块的方法");
-        //测试远征舰队状态
-        /*nexus.loadImage("D:\\test\\kantai7.png");
-        print("读取图片完成");
-        for(int fleetIndex = 1; fleetIndex <= 3; fleetIndex ++){
-            print("舰队"+fleetIndex+"的是否已经完成：" + checkFleetCompleted(fleetIndex));
-        }*/
-
-        //测试按钮点击
-        /*this.rendezvousBattle();
+        print("发远征：进入出击界面");
+        this.rendezvousBattle();
         threadWait(2000,2000);
-        //进入母港界面
-        this.rendezvousBackHarbor();*/
-
-        //发布远征测试
-        /*for(int fleetIndex = 1; fleetIndex <= 3; fleetIndex ++){
-            selectFleetExpe(fleetIndex);
-            threadWait(1600,400);
-            selectFleet(fleetIndex);
-            threadWait(1000,400);
-            resupplyAndLaunch();
-            threadWait(1000,400);
-        }*/
-
-        //测试界面识别结果
-        nexus.loadImage("D:\\test\\screenshots\\kantai1.png");
-        print("界面名称是" + nexus.getCurrentUINamePreloaded());
-
+        //点击进入远征界面
+        print("发远征：进入远征界面");
+        this.rendezvousExpe();
+        threadWait(2000,2000);
+        //针对每个闲置状态的舰队，发送远征
+        for(int fleetIndex = 1; fleetIndex <= 3; fleetIndex ++){
+            nexus.refreshImage();
+            if(checkFleetIdle(fleetIndex)){
+                print("发远征：舰队" + fleetIndex + "闲置，发送远征");
+                selectFleetExpe(fleetIndex);
+                threadWait(1600,400);
+                print("发远征：点击决定");
+                nexus.clickScreen(expeConfirmPoint);
+                threadWait(1000,400);
+                print("发远征：选择舰队");
+                selectFleet(fleetIndex);
+                threadWait(1000,400);
+                print("发远征：补给并出发");
+                resupplyAndLaunch();
+                threadWait(1000,400);
+            }
+        }
     }
 
     //检测完成的远征，并根据配置继续启动远征，为阻塞方法以避免冲突
     public void expeditionsCheck(){
         //检查并争取锁，获取失败则直接返回
         if(!nexus.tryClaimLockifNotOccupied()){
+            print("远征检测：锁被占用，直接返回");
             return;
         }
+        print("开始远征检测");
         /*如果存在完成状态的远征，则进入远征界面，并回到母港，然后点击到不再存在为止
         （如果存在闲置状态的舰队——上一步后一定存在），进入远征界面
         根据每个闲置状态的舰队，选择相应的远征-选择舰队-补给-发送远征，结束后回到母港*/
@@ -110,16 +111,21 @@ public class ExpeditionWisp {
         //如果存在完成状态的远征
         nexus.refreshImage();
         if(!(checkFleetCompleted(1) || checkFleetCompleted(2) || checkFleetCompleted(3))){
+            nexus.releaseLock();
             return;
         }
         //进入出击界面
+        print("收远征：进入出击界面");
         this.rendezvousBattle();
-        threadWait(2000,2000);
+        threadWait(3000,2000);
         //进入母港界面
+        print("收远征：回到母港界面");
         this.rendezvousBackHarbor();
+        threadWait(3000,2000);
         //在还有完成状态的情况下，点击空白
         nexus.refreshImage();
         while((checkFleetCompleted(1) || checkFleetCompleted(2) || checkFleetCompleted(3))){
+            print("收远征：点击空白");
             this.clickBlankHarbor();
             threadWait(300,1000);
             nexus.refreshImage();
@@ -130,23 +136,35 @@ public class ExpeditionWisp {
             threadWait(1600,400);
         }
         //点击进入出击界面
+        print("发远征：进入出击界面");
         this.rendezvousBattle();
         threadWait(2000,2000);
         //点击进入远征界面
+        print("发远征：进入远征界面");
         this.rendezvousExpe();
         threadWait(2000,2000);
         //针对每个闲置状态的舰队，发送远征
         for(int fleetIndex = 1; fleetIndex <= 3; fleetIndex ++){
             nexus.refreshImage();
             if(checkFleetIdle(fleetIndex)){
+                print("发远征：舰队" + fleetIndex + "闲置，发送远征");
                 selectFleetExpe(fleetIndex);
                 threadWait(1600,400);
+                print("发远征：点击决定");
+                nexus.clickScreen(expeConfirmPoint);
+                threadWait(1000,400);
+                print("发远征：选择舰队");
                 selectFleet(fleetIndex);
                 threadWait(1000,400);
+                print("发远征：出发");
                 resupplyAndLaunch();
-                threadWait(1000,400);
+                threadWait(6000,400);
+
             }
         }
+        print("发远征结束：返回母港");
+        this.rendezvousBackHarbor();
+        threadWait(2000,400);
         //释放锁
         nexus.releaseLock();
     }
@@ -160,6 +178,7 @@ public class ExpeditionWisp {
     }
 
     private boolean checkFleetStatus(int fleetIndex, ExpeditionStatus status){
+        print("舰队" + fleetIndex + "的远征状态为" + getExpeditionStatus(fleetIndex));
         return (getExpeditionStatus(fleetIndex) == status);
     }
 
@@ -177,7 +196,8 @@ public class ExpeditionWisp {
     }
 
     private boolean compareExpeditionColor(Color expeditionColor, int paraFleetIndex){
-        return nexus.compareImageColorDefault(expeditionColor, (int)expeOneStatusPoint.getX(), (int)expeOneStatusPoint.getY() + expeStatusGap * (paraFleetIndex - 1));
+        //print("比较远征颜色，坐标" + (int)expeOneStatusPoint.getX() + "," + ((int)expeOneStatusPoint.getY() + expeStatusGap * (paraFleetIndex - 1)));
+        return nexus.compareImageColor(expeditionColor, (int)expeOneStatusPoint.getX(), (int)expeOneStatusPoint.getY() + expeStatusGap * (paraFleetIndex - 1), 0, 0);
     }
 
     //进入母港界面
