@@ -59,5 +59,12 @@ public class Drone {
         });
     }
 
+    public void downButton(int paraKeyCode){
+        robot.keyPress(paraKeyCode);
+    }
+
+    public void releaseButton(int paraKeyCode){
+        robot.keyRelease(paraKeyCode);
+    }
 
 }

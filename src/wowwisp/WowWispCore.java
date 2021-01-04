@@ -24,6 +24,8 @@ public class WowWispCore {
     public static Nexus nexus;
     public static LeatherWisp leatherWisp;
 
+    long lastCastTime;
+
     public WowWispCore(){
         nexus = new Nexus();
         nexus.startNexus("leather");
@@ -35,25 +37,29 @@ public class WowWispCore {
     private void startLoop(){
         print("Starting WOWWisp Core...");
         nexus.getCachedThreadPool().execute(() -> {
-            long lastCastTime = System.currentTimeMillis();
+            lastCastTime = System.currentTimeMillis();
             while (true) {
-                if(lastCastTime + globalCD < System.currentTimeMillis()){
-                    nexus.refreshImage();
-                    leatherWisp.leatherMobRefresh();
-                    Target pickedTarget = leatherWisp.getAvailableTarget();
-                    if(null != pickedTarget){
-                        print("取到的单位是" + pickedTarget);
-                        leatherWisp.tagTarget(pickedTarget);
-                        nexus.moveMouse(pickedTarget.getTargetLocation());
-                        nexus.pressButton(KeyEvent.VK_F4);
-                        lastCastTime = System.currentTimeMillis();
-                    }
-                }else{
-                    print("等待暂停功能完成后，集成点击并剥皮功能，判定mouseover（宏命令条件）/选择单位（清空-选择）死亡再点击右键。之前由AHK代理");
-                }
+                this.searchAttack();
                 threadWait(loopInterval);
             }
         });
+    }
+
+    private void searchAttack(){
+        if(lastCastTime + globalCD < System.currentTimeMillis()){
+            nexus.refreshImage();
+            leatherWisp.leatherMobRefresh();
+            Target pickedTarget = leatherWisp.getAvailableTarget();
+            if(null != pickedTarget){
+                print("取到的单位是" + pickedTarget);
+                leatherWisp.tagTarget(pickedTarget);
+                nexus.moveMouse(pickedTarget.getTargetLocation());
+                nexus.pressButton(KeyEvent.VK_F4);
+                lastCastTime = System.currentTimeMillis();
+            }
+        }else{
+            print("等待暂停功能完成后，集成点击并剥皮功能，判定mouseover（宏命令条件）/选择单位（清空-选择）死亡再点击右键。之前由AHK代理");
+        }
     }
 
     public void leatherSearchTest(){

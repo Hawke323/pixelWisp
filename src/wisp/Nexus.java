@@ -16,7 +16,7 @@ import java.util.List;
 
 //核心总控类，包含截图的共享信息、机器人的共享实例，并向上开放接口
 public class Nexus {
-    private boolean publicWispsLock = true;
+    private static boolean publicWispsLock = true;
 
     public BufferedImage getGameImage() {
         return gameImage;
@@ -287,6 +287,14 @@ public class Nexus {
         drone.pressButton(paraKeyCode, clickDuration);
     }
 
+    public void buttonDown(int paraKeyCode){
+        drone.downButton(paraKeyCode);
+    }
+
+    public void buttonUp(int paraKeyCode){
+        drone.releaseButton(paraKeyCode);
+    }
+
     void captureSaveGameImage(){
         refreshImage();
         saveGameImage();
@@ -371,16 +379,16 @@ public class Nexus {
         this.publicWispsLock = publicWispsLock;
     }
 
-    public boolean tryClaimLockifNotOccupied(){
-        if(!this.publicWispsLock){
-            this.publicWispsLock = true;
+    public static boolean tryClaimLockifNotOccupied(){
+        if(!publicWispsLock){
+            publicWispsLock = true;
             return true;
         }
         return false;
     }
 
-    public void releaseLock(){
-        this.publicWispsLock = false;
+    public static void releaseLock(){
+        publicWispsLock = false;
     }
 
 }

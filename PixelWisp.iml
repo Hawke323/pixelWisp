@@ -24,5 +24,7 @@
     <orderEntry type="library" name="jna-platform-5.6.0" level="project" />
     <orderEntry type="library" name="fastjson-1.2.75-javadoc" level="project" />
     <orderEntry type="library" name="fastjson-1.2.75" level="project" />
+    <orderEntry type="library" name="activation" level="project" />
+    <orderEntry type="library" name="javax.mail" level="project" />
   </component>
 </module>

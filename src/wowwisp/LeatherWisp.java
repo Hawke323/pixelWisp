@@ -11,6 +11,8 @@ import java.util.Random;
 
 import static wisp.Nexus.print;
 
+
+//寻找所有满血血条并攻击
 public class LeatherWisp {
     private Nexus nexus;
 
