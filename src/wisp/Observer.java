@@ -8,6 +8,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+import static wisp.Nexus.print;
+
 
 //图片直接相关操作，部分是静态方法
 public class Observer {
@@ -62,7 +64,7 @@ public class Observer {
             File outputFile = new File(paraPathName);
             if(!outputFile.exists()){
                 if(outputFile.createNewFile()){
-                    Nexus.print("新建文件" + paraPathName);
+                    print("新建文件" + paraPathName);
                 }
             }
             ImageIO.write(paraImage, "png", outputFile);

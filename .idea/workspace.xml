@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d344f0e-ca1b-4217-b2f8-062ae23833cc" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/activation.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" afterDir="false" />
@@ -15,12 +16,18 @@
       <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/wisp/Nexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/wisp/Nexus.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PixelWisp/wowwisp/WowWispCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PixelWisp/wowwisp/WowWispCore.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wisp/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wisp/Drone.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/kantaiWisp/FactoryWisp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kantaiWisp/KanColleWisp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kantaiWisp/DrillWisp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kantaiWisp/KantaiWispCore.java" afterDir="false" />
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
       <change beforePath="$PROJECT_DIR$/src/wisp/Nexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wisp/Nexus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wowwisp/LeatherWisp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wowwisp/LeatherWisp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wowwisp/WowWispCore.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +36,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="188">
       <file pinned="false" current-in-tab="false">
@@ -191,6 +199,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -203,8 +213,11 @@
       <find>开始预载wisp文件</find>
       <find>发现匹配点</find>
       <find>Switch</find>
+<<<<<<< HEAD
       <find>click</find>
       <find>lock</find>
+=======
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
     </findStrings>
     <dirStrings>
       <dir>E:\Workbench\Personal\PixelWisp</dir>
@@ -213,6 +226,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -345,6 +359,16 @@
       </pane>
       <pane id="Scope" />
     </panes>
+=======
+  <component name="ProjectId" id="1lv0oxZdzlxDeDGzRFBUMCpOgEf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -354,24 +378,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ibis4/source/davinci-hardware-monitor/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workbench\Personal\PixelWisp\src\externalLib" />
-      <recent name="E:\Workbench\Personal\PixelWisp\src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="wowwisp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workbench\Personal\PixelWisp\src\externalLib" />
       <recent name="E:\Workbench\Personal\PixelWisp\src" />
       <recent name="E:\Workbench\Personal\PixelWisp\src\wisp" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workbench\Personal\PixelWisp\src\externalLib" />
+      <recent name="E:\Workbench\Personal\PixelWisp\src" />
+    </key>
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -387,6 +409,11 @@
   <component name="RunManager">
     <configuration name="EmailUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="wisp.utils.EmailUtil" />
+=======
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="KanColleWisp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kantaiWisp.KanColleWisp" />
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
       <module name="PixelWisp" />
       <extension name="coverage">
         <pattern>
@@ -421,27 +448,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeatherWisp.leatherSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Wand.adjutantTestCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PixelWisp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="wowwisp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="wowwisp" />
-      <option name="MAIN_CLASS_NAME" value="wowwisp.LeatherWisp" />
-      <option name="METHOD_NAME" value="leatherSearchTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Wand" />
+      <option name="METHOD_NAME" value="adjutantTestCompare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Wand.leatherSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Wand.adjutantTestGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PixelWisp" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Wand" />
-      <option name="METHOD_NAME" value="leatherSearchTest" />
+      <option name="METHOD_NAME" value="adjutantTestGenerate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -449,11 +470,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.EmailUtil" />
         <item itemvalue="JUnit.Wand.leatherSearchTest" />
         <item itemvalue="JUnit.LeatherWisp.leatherSearchTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.KantaiWispCore" />
+=======
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.KantaiWispCore" />
+        <item itemvalue="Application.KanColleWisp" />
+        <item itemvalue="JUnit.Wand.adjutantTestCompare" />
+        <item itemvalue="JUnit.Wand.adjutantTestGenerate" />
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
       </list>
     </recent_temporary>
   </component>
@@ -472,44 +501,51 @@
       <workItem from="1605489854511" duration="9527000" />
       <workItem from="1605577045495" duration="9100000" />
       <workItem from="1606702271407" duration="85514000" />
+<<<<<<< HEAD
       <workItem from="1607322078208" duration="46761000" />
       <workItem from="1608107389153" duration="1693000" />
       <workItem from="1608261816002" duration="55144000" />
+=======
+      <workItem from="1607322078208" duration="44806000" />
+      <workItem from="1608462441351" duration="8809000" />
+      <workItem from="1608656024674" duration="5824000" />
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 47m 57s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTest - 2020.12.03 at 15h 34m 39s.xml">
+      <configuration name="Wand.adjutantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 48m 47s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTest - 2020.12.03 at 15h 42m 53s.xml">
+      <configuration name="Wand.adjutantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 48m 57s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTest - 2020.12.03 at 15h 43m 15s.xml">
+      <configuration name="Wand.adjutantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 05s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 44m 36s.xml">
+      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 12s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 44m 50s.xml">
+      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 16s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 45m 25s.xml">
+      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 16h 49m 23s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 45m 37s.xml">
+      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 17h 08m 46s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 46m 36s.xml">
+      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 17h 10m 31s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 47m 04s.xml">
+      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Wand_leatherSearchTest - 2020.12.21 at 17h 11m 51s.xml">
-      <configuration name="Wand.leatherSearchTest" configurationId="JUnit" />
+    <history-entry file="Wand_adjutantTestCompare - 2020.12.03 at 16h 47m 19s.xml">
+      <configuration name="Wand.adjutantTestCompare" configurationId="JUnit" />
     </history-entry>
   </component>
+<<<<<<< HEAD
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="212615000" />
   </component>
@@ -889,5 +925,31 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1064" height="619" key="GridCell.Tab.0.bottom" timestamp="1608709417396">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1064" height="619" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1608709417396" />
+    <state width="1064" height="619" key="GridCell.Tab.0.center" timestamp="1608709417395">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1064" height="619" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1608709417395" />
+    <state width="1064" height="619" key="GridCell.Tab.0.left" timestamp="1608709417395">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1064" height="619" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1608709417395" />
+    <state width="1064" height="619" key="GridCell.Tab.0.right" timestamp="1608709417396">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1064" height="619" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1608709417396" />
+    <state x="1272" y="596" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1608463359970">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1272" y="596" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.3440.1400@0.0.3440.1400" timestamp="1608463359970" />
+>>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
   </component>
 </project>
