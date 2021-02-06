@@ -17,7 +17,7 @@ public class WowWispCore {
     }
 
     //______________________________________配置参数
-    private int loopInterval = 100;
+    private int loopInterval = 5000;
     private int globalCD = (int) (1.5 * 1000);
     //______________________________________配置参数
 
@@ -28,7 +28,7 @@ public class WowWispCore {
 
     public WowWispCore(){
         nexus = new Nexus();
-        nexus.startNexus("leather");
+        nexus.startNexus("Warcraft");
         leatherWisp = new LeatherWisp(nexus);
         this.startLoop();
     }
@@ -39,7 +39,24 @@ public class WowWispCore {
         nexus.getCachedThreadPool().execute(() -> {
             lastCastTime = System.currentTimeMillis();
             while (true) {
+<<<<<<< HEAD
+                if(lastCastTime + globalCD < System.currentTimeMillis()){
+                    nexus.refreshImage();
+                    leatherWisp.leatherMobRefresh();
+                    Target pickedTarget = leatherWisp.getAvailableTarget();
+                    if(null != pickedTarget){
+                        print("取到的单位是" + pickedTarget);
+                        leatherWisp.tagTarget(pickedTarget);
+                        nexus.moveMouse(pickedTarget.getTargetLocation());
+                        nexus.pressButton(KeyEvent.VK_F3);
+                        lastCastTime = System.currentTimeMillis();
+                    }
+                }else{
+                    print("等待暂停功能完成后，集成点击并剥皮功能，判定mouseover（宏命令条件）/选择单位（清空-选择）死亡再点击右键。之前由AHK代理");
+                }
+=======
                 this.searchAttack();
+>>>>>>> 14b8be31f18b15cbd7e58db0f3fbbf1fb67ba932
                 threadWait(loopInterval);
             }
         });

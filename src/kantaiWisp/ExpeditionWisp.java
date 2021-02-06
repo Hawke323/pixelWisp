@@ -20,13 +20,17 @@ public class ExpeditionWisp {
     //___________________________配置参数，界面相关___________________________//
     //界面位置相关（固定）
         //Poi远征状态位置
-    Point expeOneStatusPoint = new Point(662, 875); //1-875, 3-925. gap = 25
+    Point expeOneStatusPoint = new Point(652, 875); //1-875, 3-925. gap = 25
     int expeStatusGap = 25;
 
         //Poi远征状态颜色
-    Color expeUnderwayColor = new Color(35,69,93);
+    Color expeUnderwayColor = new Color(41,79,105);
+    Color expeCompleteColor = new Color(40,86,82);
+    Color expeIdleColor = new Color(48,64,77);
+
+    /*Color expeUnderwayColor = new Color(35,69,93);
     Color expeCompleteColor = new Color(34,76,70);
-    Color expeIdleColor = new Color(39,52,62);
+    Color expeIdleColor = new Color(39,52,62);*/
 
         //游戏远征界面远征分页和科目位置点
     Point expeTabOnePoint = new Point(212, 704); //1-212, 7-573, gap = 60
@@ -165,6 +169,8 @@ public class ExpeditionWisp {
         print("发远征结束：返回母港");
         this.rendezvousBackHarbor();
         threadWait(2000,400);
+        //切换到副窗口
+        nexus.clickScreen(1600,300);
         //释放锁
         nexus.releaseLock();
     }
