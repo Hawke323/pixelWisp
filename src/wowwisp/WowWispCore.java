@@ -39,7 +39,6 @@ public class WowWispCore {
         nexus.getCachedThreadPool().execute(() -> {
             lastCastTime = System.currentTimeMillis();
             while (true) {
-<<<<<<< HEAD
                 if(lastCastTime + globalCD < System.currentTimeMillis()){
                     nexus.refreshImage();
                     leatherWisp.leatherMobRefresh();
@@ -54,9 +53,7 @@ public class WowWispCore {
                 }else{
                     print("等待暂停功能完成后，集成点击并剥皮功能，判定mouseover（宏命令条件）/选择单位（清空-选择）死亡再点击右键。之前由AHK代理");
                 }
-=======
                 this.searchAttack();
->>>>>>> 14b8be31f18b15cbd7e58db0f3fbbf1fb67ba932
                 threadWait(loopInterval);
             }
         });

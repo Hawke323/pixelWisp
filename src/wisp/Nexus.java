@@ -16,12 +16,7 @@ import java.util.List;
 
 //核心总控类，包含截图的共享信息、机器人的共享实例，并向上开放接口
 public class Nexus {
-<<<<<<< HEAD
     private static boolean publicWispsLock = true;
-=======
->>>>>>> 1fe7f3118b4658e175abcfc02f7858d331e808e9
-
-    private boolean publicWispsLock = false;
     public BufferedImage getGameImage() {
         return gameImage;
     }
