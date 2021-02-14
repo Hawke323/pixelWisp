@@ -55,7 +55,7 @@ public class DrillWisp {
     public void startDrills(){
 
         //将lock的flag设为true，避免其他wisp操作
-        if(!nexus.tryClaimLockifNotOccupied()){
+        if(!Nexus.tryClaimLockIfNotOccupied()){
             print("其他操作进行中，尝试发动演习失败");
             return;
         }

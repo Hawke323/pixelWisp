@@ -16,7 +16,7 @@ import java.util.List;
 
 //核心总控类，包含截图的共享信息、机器人的共享实例，并向上开放接口
 public class Nexus {
-    private static boolean publicWispsLock = true;
+    private static boolean publicWispsLock = false;
     public BufferedImage getGameImage() {
         return gameImage;
     }
@@ -42,7 +42,7 @@ public class Nexus {
     private int moveMouseOffset = 4;
     private int clickDuration = 100;
     //______________________________________配置参数2
-    private String sourceFilePath = "D:\\kantai\\wisp";
+    private String wispFilePath = "D:\\kantai\\wisp";
     private double compareUIThreshold = 0.8;
 
     //从左到右的颜色
@@ -77,8 +77,8 @@ public class Nexus {
 
     //从所有PNG图新建wisp文件，并预读所有新建或者存在的wisp文件
     public void generateReloadWisp(){
-        Adjutant.generateWisps(sourceFilePath,signatureColors);
-        adjutant.preloadWisps(sourceFilePath);
+        Adjutant.generateWisps(wispFilePath,signatureColors);
+        adjutant.preloadWisps(wispFilePath);
     }
 
     //核心的循环方法，用于刷新游戏截图
@@ -177,7 +177,7 @@ public class Nexus {
 
     //获得当前游戏UI，涉及文件读取，不推荐使用
     public String getCurrentUIName(){
-        return Adjutant.compareFolderWisps(gameImage, sourceFilePath, compareUIThreshold);
+        return Adjutant.compareFolderWisps(gameImage, wispFilePath, compareUIThreshold);
     }
 
     //寻找游戏窗口 应该会涉及到位置转换
@@ -294,12 +294,12 @@ public class Nexus {
         drone.releaseButton(paraKeyCode);
     }
 
-    void captureSaveGameImage(){
+    public void captureSaveGameImage(){
         refreshImage();
         saveGameImage();
     }
 
-    void saveGameImage(){
+    public void saveGameImage(){
         Observer.saveBufferedImageDefaultPathName(gameImage);
     }
 
@@ -358,8 +358,8 @@ public class Nexus {
         this.clickDuration = clickDuration;
     }
 
-    public void setSourceFilePath(String sourceFilePath) {
-        this.sourceFilePath = sourceFilePath;
+    public void setWispFilePath(String wispFilePath) {
+        this.wispFilePath = wispFilePath;
     }
 
     public void setCompareUIThreshold(double compareUIThreshold) {
@@ -378,15 +378,18 @@ public class Nexus {
         this.publicWispsLock = publicWispsLock;
     }
 
-    public static boolean tryClaimLockifNotOccupied(){
+    public static boolean tryClaimLockIfNotOccupied(){
         if(!publicWispsLock){
             publicWispsLock = true;
+            print("锁开始被占用");
             return true;
         }
+        print("占用锁失败");
         return false;
     }
 
     public static void releaseLock(){
+        print("锁被释放");
         publicWispsLock = false;
     }
 

@@ -103,7 +103,7 @@ public class ExpeditionWisp {
     //检测完成的远征，并根据配置继续启动远征，为阻塞方法以避免冲突
     public void expeditionsCheck(){
         //检查并争取锁，获取失败则直接返回
-        if(!nexus.tryClaimLockifNotOccupied()){
+        if(!Nexus.tryClaimLockIfNotOccupied()){
             print("远征检测：锁被占用，直接返回");
             return;
         }

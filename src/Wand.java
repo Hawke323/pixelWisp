@@ -25,7 +25,7 @@ public class Wand {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         new KantaiWispCore();
-    }s
+    }
 
     @Test
     void leatherSearchTest(){

@@ -111,7 +111,7 @@ public class HarvestWisp {
     //100毫秒检查一次获取锁
     private void waitForLockReleasedAndClaim(){
         while(true){
-            if(Nexus.tryClaimLockifNotOccupied()){
+            if(Nexus.tryClaimLockIfNotOccupied()){
                 break;
             }
             Nexus.threadWait(100);
